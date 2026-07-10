@@ -1,0 +1,16 @@
+#ifndef _ACPI_H_
+#define _ACPI_H_ 
+
+#include <klib.h>
+#include <tables.h>
+
+//全局ACPI表
+extern RSDP_DESCRIPTOR *SYSTEM_RSDP_ADDR;
+extern XSDT_DESCRIPTOR *SYSTEM_XSDT_ADDR;
+extern RSDT_DESCRIPTOR *SYSTEM_RSDT_ADDR;
+extern FADT_DESCRIPTOR *SYSTEM_FADT_ADDR;
+
+_Bool init_ACPI(RSDP_DESCRIPTOR* RSDP);//全局ACPI
+ACPI_SDT_HEADER *find_FADT();//寻找FADT
+
+#endif
