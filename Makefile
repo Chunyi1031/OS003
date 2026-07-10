@@ -1,11 +1,11 @@
 #
-# OS002 总构建脚本
+# OS003 总构建脚本
 #
 # 默认工具
 #	虚拟机:qemu-system-x86_64 
 #	分区工具:parted
 #
-# 2026/3/7 Liu Chunyi
+# 2026/7/10 Liu Chunyi
 #
 
 .SILENT:
